@@ -50,10 +50,10 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        Button logoutBtn = findViewById(R.id.logoutBtn);
+        Button logoutBtn = findViewById(R.id.menu_BTN_logout);
         cvAllClassic = findViewById(R.id.cvAllClassic);
         cvAllClassic.setOnClickListener(this);
-        cvFind = findViewById(R.id.cvFind);
+        cvFind = findViewById(R.id.menu_CV_Find);
         cvFind.setOnClickListener(this);
         cvRandom = findViewById(R.id.cvRandom);
         cvRandom.setOnClickListener(this);
@@ -135,7 +135,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this,AllClassicActivity.class));
                 break;
 
-            case R.id.cvFind:
+            case R.id.menu_CV_Find:
                 startActivity(new Intent(this,MyBarActivity.class));
                 break;
 
@@ -174,9 +174,9 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
 
         d.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT);
 
-        TextView tvName = d.findViewById(R.id.tvName);
+        TextView tvName = d.findViewById(R.id.cocktail_TV_Name);
         tvName.setText(String.valueOf(cocktail.name));
-        ImageView ivImage = d.findViewById(R.id.ivImage);
+        ImageView ivImage = d.findViewById(R.id.cocktail_IV_Image);
         Picasso.get().load(cocktail.url).into(ivImage);
 
         RecyclerView cocktailPage_RC_Ingredients = d.findViewById(R.id.cocktailPage_RC_Ingredients);
@@ -197,7 +197,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         instructionsAdapter.notifyDataSetChanged();
 
 
-        ImageButton ibLike = d.findViewById(R.id.ibLike);
+        ImageButton ibLike = d.findViewById(R.id.cocktail_IB_like);
         if(isUserLikedIt(cocktail)) ibLike.setBackground(getDrawable(R.drawable.heart_full));
         else  ibLike.setBackground(getDrawable(R.drawable.heart));
 

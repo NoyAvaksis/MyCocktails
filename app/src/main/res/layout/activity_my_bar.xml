@@ -18,7 +18,7 @@
                 android:textStyle="bold"
                 />
             <Button
-                android:id="@+id/btnPass"
+                android:id="@+id/myBar_BTN_pass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

@@ -12,15 +12,14 @@
 
 
             <TextView
-                android:id="@+id/tvTitle"
+                android:id="@+id/quick_TV_Title"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="Vodka Cocktails"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="15dp"
-                android:fontFamily="@font/base2"
+                android:fontFamily="@font/base4"
                 android:textSize="24dp"
-                android:background="@drawable/rounded_corner"
                 android:gravity="center"
                 android:layout_gravity="center"
 

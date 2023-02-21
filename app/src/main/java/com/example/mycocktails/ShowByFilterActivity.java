@@ -40,10 +40,10 @@ public class ShowByFilterActivity extends AppCompatActivity {
         listFilter = (ArrayList<String>) args.getSerializable("ARRAYLIST_FILTER");
 
 
-        tvMessage = findViewById(R.id.tvMessage);
+        tvMessage = findViewById(R.id.filter_TV_Message);
         listCocktail = new ArrayList<>();
 
-        rv = findViewById(R.id.rv);
+        rv = findViewById(R.id.cocktail_RV);
         rv.setHasFixedSize(false);
         rv.setLayoutManager(new LinearLayoutManager(this));
 

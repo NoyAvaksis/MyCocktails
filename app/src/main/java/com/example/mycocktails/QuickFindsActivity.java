@@ -39,7 +39,7 @@ public class QuickFindsActivity extends AppCompatActivity {
         filter = args.getString("FILTER");
 
 
-        tvTitle = findViewById(R.id.tvTitle);
+        tvTitle = findViewById(R.id.quick_TV_Title);
         tvTitle.setText(filter);
         listCocktail = new ArrayList<>();
 

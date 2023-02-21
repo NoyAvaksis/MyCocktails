@@ -2,7 +2,6 @@ package com.example.mycocktails;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -86,7 +85,7 @@ public class MyBarActivity extends AppCompatActivity implements View.OnClickList
         cocktailPage_RC_Ingredients.setAdapter(myBarAdapter);
         myBarAdapter.notifyDataSetChanged();
 
-        btnPass = findViewById(R.id.btnPass);
+        btnPass = findViewById(R.id.myBar_BTN_pass);
         btnPass.setOnClickListener(this);
 
         // Save state

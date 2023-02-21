@@ -8,17 +8,19 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tvMessage"
+        android:id="@+id/filter_TV_Message"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="no cocktail is found"
-        android:textSize="24dp"
+        android:text="Can't make any Cocktail, select more ingredients to start crafting cocktail on your own!"
+        android:textSize="36dp"
+        android:fontFamily="@font/base4"
         android:textColor="@color/black"
+        android:textStyle="bold"
         android:visibility="gone"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv"
+        android:id="@+id/cocktail_RV"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </LinearLayout>

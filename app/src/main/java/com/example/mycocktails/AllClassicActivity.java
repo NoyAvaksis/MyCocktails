@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -33,7 +32,7 @@ public class AllClassicActivity extends AppCompatActivity {
 
         list = new ArrayList<>();
 
-        rv = findViewById(R.id.rv);
+        rv = findViewById(R.id.cocktail_RV);
         rv.setHasFixedSize(false);
         rv.setLayoutManager(new LinearLayoutManager(this));
 

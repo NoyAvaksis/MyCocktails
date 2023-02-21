@@ -4,18 +4,20 @@
     android:layout_height="wrap_content"
     android:id="@+id/lBackground"
     android:orientation="vertical"
-    android:layout_margin="8dp">
+    android:layout_margin="8dp"
+    android:background="@drawable/frame_top">
 
         <ImageView
-            android:id="@+id/ivImage"
+            android:id="@+id/cocktail_IV_Image"
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:src="@drawable/img_cats_meow_rum"
             android:layout_gravity="center"
-            android:clickable="false"/>
+            android:clickable="false"
+            android:layout_margin="8dp"/>
 
         <TextView
-            android:id="@+id/tvName"
+            android:id="@+id/cocktail_TV_Name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
@@ -23,6 +25,7 @@
             android:textStyle="bold"
             android:fontFamily="@font/base3"
             android:layout_marginTop="16dp"
+            android:layout_margin="8dp"
             android:clickable="false"/>
 
 </LinearLayout>

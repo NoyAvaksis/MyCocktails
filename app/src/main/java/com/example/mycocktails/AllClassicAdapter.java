@@ -61,9 +61,9 @@ public class AllClassicAdapter extends RecyclerView.Adapter<AllClassicAdapter.Mi
 
         d.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT);
 
-        TextView tvName = d.findViewById(R.id.tvName);
+        TextView tvName = d.findViewById(R.id.cocktail_TV_Name);
         tvName.setText(String.valueOf(mList.get(index).name));
-        ImageView ivImage = d.findViewById(R.id.ivImage);
+        ImageView ivImage = d.findViewById(R.id.cocktail_IV_Image);
         Picasso.get().load(mList.get(index).url).into(ivImage);
 
         RecyclerView cocktailPage_RC_Ingredients = d.findViewById(R.id.cocktailPage_RC_Ingredients);
@@ -84,7 +84,7 @@ public class AllClassicAdapter extends RecyclerView.Adapter<AllClassicAdapter.Mi
         instructionsAdapter.notifyDataSetChanged();
 
 
-        ImageButton ibLike = d.findViewById(R.id.ibLike);
+        ImageButton ibLike = d.findViewById(R.id.cocktail_IB_like);
         if(isUserLikedIt(index)) ibLike.setBackground(context.getDrawable(R.drawable.heart_full));
         else  ibLike.setBackground(context.getDrawable(R.drawable.heart));
 
@@ -150,8 +150,8 @@ public class AllClassicAdapter extends RecyclerView.Adapter<AllClassicAdapter.Mi
 
         public MiniPostHolder(@NonNull View itemView) {
             super(itemView);
-            ivImage = itemView.findViewById(R.id.ivImage);
-            tvName = itemView.findViewById(R.id.tvName);
+            ivImage = itemView.findViewById(R.id.cocktail_IV_Image);
+            tvName = itemView.findViewById(R.id.cocktail_TV_Name);
 
         }
     }

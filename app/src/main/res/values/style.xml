@@ -25,9 +25,14 @@
 
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:windowBackground">@drawable/img_backgroung_login3</item>
-        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:windowBackground">@drawable/img_app_welcome1</item>
+        <item name="android:textColorHint">#EFE6E6</item>
 
+    </style>
+
+    <style name="NoActionBar" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
 
 </resources>

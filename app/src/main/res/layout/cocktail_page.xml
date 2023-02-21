@@ -21,7 +21,7 @@
     />
 
         <TextView
-            android:id="@+id/tvName"
+            android:id="@+id/cocktail_TV_Name"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -30,14 +30,14 @@
             android:gravity="center"
             android:textSize="30sp"
             android:fontFamily="@font/base3"
-            android:background="@drawable/rounded_corner"
+            android:background="@drawable/frame_top"
             />
 
 
 
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/ivImage"
+            android:id="@+id/cocktail_IV_Image"
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_gravity="center"
@@ -50,7 +50,7 @@
 
 
         <ImageButton
-            android:id="@+id/ibLike"
+            android:id="@+id/cocktail_IB_like"
             android:layout_width="54dp"
             android:layout_height="54dp"
             android:background="@drawable/heart"
@@ -65,7 +65,7 @@
             android:layout_marginTop="15dp"
             android:fontFamily="@font/base3"
             android:textSize="24dp"
-            android:background="@drawable/rounded_corner"
+            android:background="@drawable/frame_top"
             android:gravity="center"
 
             android:layout_gravity="center"
@@ -88,7 +88,7 @@
             android:layout_marginTop="15dp"
             android:fontFamily="@font/base3"
             android:textSize="24dp"
-            android:background="@drawable/rounded_corner"
+            android:background="@drawable/frame_top"
             android:gravity="center"
             android:layout_gravity="center"
 
