@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F8F0E7">
+
+
+
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose the ingredients you have"
+                android:layout_gravity="center"
+                android:fontFamily="@font/base3"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btnPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="SEARCH"
+                android:backgroundTint="#F1997D"
+                android:textColor="@color/black"
+                android:fontFamily="@font/base3"
+                />
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/base4"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cocktailPage_RC_Ingredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                app:reverseLayout="true"
+
+                />
+
+
+
+</LinearLayout>

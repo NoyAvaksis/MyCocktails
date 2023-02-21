@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F8F0E7"
+
+            >
+
+        <!-- The list of cocktails -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cocktails_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:layout_margin="8dp"/>
+
+        </ScrollView>
+
+</RelativeLayout>
+
